@@ -1,5 +1,5 @@
-import { Inter, Alex_Brush, Montserrat } from 'next/font/google'
 import './globals.css'
+import { Alex_Brush, Montserrat } from 'next/font/google'
 
 const alexBrush = Alex_Brush({
   weight: ['400'],
@@ -8,7 +8,7 @@ const alexBrush = Alex_Brush({
 });
 
 const montserrat = Montserrat({
-  weight: ['100', '200', '300', '400', '500', '700', '800' '900'],
+  weight: ['100', '200', '300', '400', '500', '700', '800', '900'],
   subsets: ['latin'],
   variable: '--font-montserrat'
 })
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}>{children}</body>
     </html>
   )
 }
