@@ -1,7 +1,17 @@
-import { Inter } from 'next/font/google'
+import { Inter, Alex_Brush, Montserrat } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const alexBrush = Alex_Brush({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-alexBrush'
+});
+
+const montserrat = Montserrat({
+  weight: ['100', '200', '300', '400', '500', '700', '800' '900'],
+  subsets: ['latin'],
+  variable: '--font-montserrat'
+})
 
 export const metadata = {
   title: 'Create Next App',
