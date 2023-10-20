@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -12,8 +12,11 @@ const Header = () => {
   return (
     <header className="fixed z-50 w-full">
       <div className="container mx-auto">
-        <Link>
-        Gravel and Pave
+        <Link
+          href={'#'}
+          className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'
+        >
+          Gravel and Pave
         </Link>
       </div>
     </header>
