@@ -11,6 +11,7 @@ import {motion} from 'framer-motion';
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import MenuBtn from "./MenuBtn";
+import Socials from "./Socials";
 
 
 
@@ -55,6 +56,10 @@ const Header = () => {
           <MenuBtn />
         </div>
         {/* socials  */}
+        <Socials
+          containerStyles='hidden xl:flex  text-[24px] gap-x-4'
+          iconStyles='hover:text-accent transition-all'
+        />
       </div>
     </header>
   )
