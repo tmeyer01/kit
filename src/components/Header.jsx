@@ -7,6 +7,12 @@ import Link from "next/link";
 import {motion} from 'framer-motion';
 
 
+// components
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
+import MenuBtn from "./MenuBtn";
+
+
 
 const Header = () => {
 
@@ -41,12 +47,12 @@ const Header = () => {
           Gravel and Pave
         </Link>
         {/* nav */}
-        <nav>nav</nav>
+        <Nav containerStyles='hidden xl:flex items-center  gap-x-8' />
         {/* nav mobile */}
-        <nav>nav mobile</nav>
+        <NavMobile />
         {/* nav button */}
-        <div>
-          button
+        <div className='absolute right-7 top-9 z-10 xl:hidden'>
+          <MenuBtn />
         </div>
         {/* socials  */}
       </div>
