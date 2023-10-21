@@ -9,11 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "^8.51.0",
     "framer-motion": "^10.16.4",
-    "next": "13.5.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "react-icons": "^4.11.0",
     "react-parallax-mouse": "^2.0.1",
     "react-responsive": "^9.0.2",
