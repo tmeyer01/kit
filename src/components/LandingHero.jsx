@@ -3,10 +3,7 @@
 //next image
 import Image from "next/image"
 
-//components
-// import PariclesContainer from "../components/ParticlesContainer"
-// import ProjectsBtn from "../components/ProjectsBtn"
-// import Avatar from "../components/Avatar"
+
 
 //frmaer motion
 import { motion } from 'framer-motion';
@@ -17,13 +14,13 @@ import { fadeIn } from '../../variants'
 const LandingHero = () => {
   return (
     <section className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[80vh] xl:h-screen' id='home'>
-      <div className=' mx-auto h-full flex justify-center items-center  border-2 border-sky-500'>
+      <div className=' mx-auto h-full flex justify-center items-center text-white'>
       <motion.h1
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1 border-4 border-sky-500'
+            className='h1 pr-8 text-4xl font-anton '
           >
             Illegitimi  <br /> non {' '}carborundum
             {/* <span className="text-accent"> carborundum </span> */}
@@ -34,11 +31,11 @@ const LandingHero = () => {
            initial='hidden'
            animate='show'
            exit='hidden'
-           className=" border-4 border-sky-500 "
+           className=" "
           //  className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 border-4 border-sky-500 "
           >
             Don't let the bastards grind you down <br /> and {' '}
-            <span className="text-accent"> Keep it loud! </span>
+            <span className="text-rose-600 text-xl"> Keep it loud! </span>
       </motion.p>
       </div>
     </section>
