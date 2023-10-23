@@ -16,33 +16,13 @@ import { fadeIn } from '../../variants'
 
 const Hero = () => {
   return (
-    <section className='h-[80vh] xl:h-[850px]' id='home'>
-      <div className='container mx-auto h-full flex justify-center items-center xl:justify-start'>
-      <motion.h1
-            variants={fadeIn('down', 0.2)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='h1'
-          >
-            Transforming Dreams <br /> Into {' '}
-            <span className="text-accent"> Digital Reality </span>
-          </motion.h1>
-          {/* subtitle */}
-          <motion.p
-           variants={fadeIn('down', 0.3)}
-           initial='hidden'
-           animate='show'
-           exit='hidden'
-           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      </motion.p>
+    <section className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[80vh] xl:h-screen' id='home'>
+      <div className=' mx-auto h-full flex justify-center items-center  '>
       </div>
     </section>
   )
 };
 
 export default Hero;
+
 

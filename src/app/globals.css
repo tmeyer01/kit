@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
- @apply bg-primary font-montserrat text-white
+ @apply bg-background font-montserrat text-text
 }
 
 .pretitle {
