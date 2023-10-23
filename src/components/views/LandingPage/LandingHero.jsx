@@ -9,7 +9,7 @@ import Image from "next/image"
 import { motion } from 'framer-motion';
 
 //variants
-import { fadeIn } from '../../variants'
+import { fadeIn } from '../../../../variants'
 
 const LandingHero = () => {
   return (
