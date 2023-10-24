@@ -49,9 +49,12 @@ const AdventureBlog = () => {
   return (
     <section className='flex justify-center'>
       <GridContainer>
-        {links.map((service, index) => (
-              <AdventureCard index={index} {...links}/>
-        ))}
+        {links.map((links, index) =>  {
+          console.log(links)
+          return (
+              <AdventureCard key={index} index={index} {...links}/>
+        )
+          })}
       </GridContainer>
     </section>
   );
