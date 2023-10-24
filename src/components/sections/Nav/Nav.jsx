@@ -1,8 +1,9 @@
-// import { Link } from "react-scroll";
+'use client'
+import React, { useContext } from 'react';
+
 import Link from 'next/link'
 import { useMediaQuery } from 'react-responsive';
-
-// import AdventureBlog from '@/AdventureBlog';
+import { NavContext } from '@/context/NavContext';
 
 const links = [
   {
@@ -33,6 +34,7 @@ const Nav = ({containerStyles, linkStyles}) => {
     query: '(min-width: 1310px)',
   });
 
+  const { isOpen, setIsOpen } = useContext(NavContext);
 
   return (
    <nav className={`${containerStyles}`}>
@@ -46,12 +48,12 @@ const Nav = ({containerStyles, linkStyles}) => {
           spy
           offset={-50}
           activeClass='active'
+          onClick={() => setIsOpen(false)}
         >
           {link.name}
         </Link>
       );
     })}
-
    </nav>
   );
 };

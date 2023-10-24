@@ -1,5 +1,5 @@
 const  AdventureCard = ({ index, title, discription }) => {
-  console.log(index, title, discription)
+
 
   return (
     <div className='flex flex-row items-center border border-indigo-600 '>

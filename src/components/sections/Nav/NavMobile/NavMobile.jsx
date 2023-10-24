@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react';
 import { NavContext } from '@/context/NavContext';
 
@@ -9,6 +11,8 @@ import Nav from '../Nav';
 const NavMobile = () => {
   const { isOpen, setIsOpen } = useContext(NavContext);
 
+
+
   return (
     <nav
       className={
@@ -18,12 +22,15 @@ const NavMobile = () => {
     >
       <div
         onClick={() => setIsOpen(false)}
-        className='absolute right-4 top-5 cursor-pointer'
+        className='absolute right-4 top-5 cursor-pointer border-8 border-indigo-600'
       >
-        <RiCloseLine className='text-5xl' />
+        <RiCloseLine className='text-5xl'  />
       </div>
+
+
       <Nav
       containerStyles='flex flex-col text-[30px] uppercase font-bold bg-pink-500/10 h-full items-center justify-center gap-y-8' />
+
     </nav>
   );
 };

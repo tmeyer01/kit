@@ -50,7 +50,7 @@ const AdventureBlog = () => {
     <section className='flex justify-center'>
       <GridContainer>
         {links.map((links, index) =>  {
-          console.log(links)
+
           return (
               <AdventureCard key={index} index={index} {...links}/>
         )

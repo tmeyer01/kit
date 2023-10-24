@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 import {motion} from 'framer-motion';
+
+import { useParams } from 'next/navigation';
 
 
 // components
@@ -15,7 +19,7 @@ import Socials from "../../Socials";
 
 
 
-const Header = () => {
+const Header = ({ params }) => {
 
   const [active, setActive] = useState(false);
 
@@ -34,6 +38,8 @@ const Header = () => {
     }
 
   }, [active]);
+
+
   return (
     <header
       className={`fixed z-50 w-full transition-all ${

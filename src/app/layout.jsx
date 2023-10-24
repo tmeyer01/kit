@@ -8,7 +8,6 @@ import Footer from '@/components/sections/Footer/Footer';
 // context provider
 import NavContextProvider from '@/context/NavContext';
 
-// import { useRouter } from 'next/router'
 
 const alexBrush = Alex_Brush({
   weight: ['400'],
@@ -33,7 +32,8 @@ export const metadata = {
   description: 'Illegitimi non carborundum',
 }
 
-export default function RootLayout({ children }) {
+
+export default function RootLayout({ children}) {
 
   return (
     <NavContextProvider>
