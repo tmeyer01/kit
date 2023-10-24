@@ -9,8 +9,8 @@ import Hero from '@/components/Hero';
 export default function Adventures () {
   return (
     <>
-    <Hero />
-    <AdventureBlog/>
+      <Hero />
+      <AdventureBlog/>
     </>
   )
 }
