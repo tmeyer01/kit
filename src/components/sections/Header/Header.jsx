@@ -46,12 +46,6 @@ const Header = ({ params }) => {
         }`}
     >
       <div className='container mx-auto flex flex-col xl:flex-row items-center justify-between'>
-        <Link
-          href={'/'}
-          className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0 items-center font-anton tracking-widest text-2xl uppercase'
-        >
-          gravel and pavé
-        </Link>
         {/* nav */}
         <Nav
           watchingScroll={activeScroll}
