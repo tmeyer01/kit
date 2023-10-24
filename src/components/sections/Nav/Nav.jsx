@@ -1,59 +1,64 @@
 'use client'
-import React, { useContext } from 'react';
+
+import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link'
 import { useMediaQuery } from 'react-responsive';
 import { NavContext } from '@/context/NavContext';
 
+
+import { motion } from 'framer-motion';
+
 const links = [
   {
-    path: '/',
-    name: 'Home',
+    href: '/adventures',
+    label: 'Adventures',
   },
   {
-    path: '/adventures',
-    name: 'Adventures',
+    href: '/routes',
+    label: 'Routes',
   },
   {
-    path: 'routes',
-    name: 'Routes',
+    href: '/merchandise',
+    label: 'Merchandise',
   },
   {
-    path: 'merchandise',
-    name: 'Merchandise',
-  },
-  {
-    path: 'contact',
-    name: 'Contact',
-  },
+    href: '/contact',
+    label: 'Contact',
+  }
 ];
 
-const Nav = ({containerStyles, linkStyles}) => {
+const Nav = ({containerStyles, linkStyles, watchingScroll}) => {
 
   const isDesktop = useMediaQuery({
     query: '(min-width: 1310px)',
   });
 
-  const { isOpen, setIsOpen } = useContext(NavContext);
+  const [selected, setSelected] = useState('');
+
+
 
   return (
    <nav className={`${containerStyles}`}>
     {links.map((link, index) => {
       return (
         <Link
-          href={link.path}
-          className={`${linkStyles} cursor-pointer border-b-2 border-transparent`}
+          href={link.href}
+          className={`${linkStyles} cursor-pointer relative`}
           key={index}
-          smooth={!isDesktop ? false : true}
-          spy
-          offset={-50}
-          activeClass='active'
-          onClick={() => setIsOpen(false)}
+          onClick={() => setSelected(link.href)}
         >
-          {link.name}
+          {link.label}
+          {link.href === selected  && (
+            <motion.div
+              layoutId='underline'
+              className={`left-0 block h-[1px] w-full ${watchingScroll ? "bg-white" : "bg-black"}`}
+            />
+          )}
         </Link>
       );
     })}
+
    </nav>
   );
 };

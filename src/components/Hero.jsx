@@ -16,10 +16,15 @@ import { fadeIn } from '../../variants'
 
 const Hero = () => {
   return (
-    <section className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[80vh] xl:h-screen' id='home'>
-      <div className=' mx-auto h-full flex justify-center items-center  '>
-      </div>
-    </section>
+    <motion.section
+      // variants={fadeIn('down', 0.3)}
+      // initial='hidden'
+      // animate='show'
+      // exit='hidden'
+      className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[80vh] ' id='home'>
+      {/* <div className=' mx-auto h-full flex justify-center items-center  '>
+      </div> */}
+    </motion.section>
   )
 };
 

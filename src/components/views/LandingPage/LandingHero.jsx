@@ -13,7 +13,7 @@ import { fadeIn } from '../../../../variants'
 
 const LandingHero = () => {
   return (
-    <section className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[80vh] xl:h-screen' id='home'>
+    <section className='bg-heroBackground bg-fixed   bg-cover w-full bg-center bg-no-repeat h-screen' id='home'>
       <div className=' mx-auto h-full flex justify-center items-center text-white'>
       <motion.h1
             variants={fadeIn('down', 0.2)}

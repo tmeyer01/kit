@@ -12,21 +12,21 @@ import { useParams } from 'next/navigation';
 
 
 // components
-import Nav from "../Nav/Nav";
-import NavMobile from "../Nav/NavMobile/NavMobile";
-import MenuBtn from "../../MenuBtn";
-import Socials from "../../Socials";
+import Nav from '@/components/sections/Nav/Nav';
+import NavMobile from "@/components/sections/Nav/NavMobile/NavMobile";
+import MenuBtn from '@/components/partials/Buttons/MenuBtn';
+import Socials from '@/components/Socials';
 
 
 
 const Header = ({ params }) => {
 
-  const [active, setActive] = useState(false);
+  const [activeScroll, setActiveScroll] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       // detect scroll
-      setActive(window.scrollY > 100);
+      setActiveScroll(window.scrollY > 100);
     }
 
     // add event listener
@@ -37,13 +37,12 @@ const Header = ({ params }) => {
       window.removeEventListener('scroll', handleScroll);
     }
 
-  }, [active]);
-
+  }, [activeScroll]);
 
   return (
     <header
       className={`fixed z-50 w-full transition-all ${
-        active ?  'bg-[#030315] py-6 text-white' : 'bg-transparent py-8'
+        activeScroll ?  'bg-[#030315] py-6 text-white' : 'bg-transparent py-8'
         }`}
     >
       <div className='container mx-auto flex flex-col xl:flex-row items-center justify-between'>
@@ -54,7 +53,10 @@ const Header = ({ params }) => {
           gravel and pavé
         </Link>
         {/* nav */}
-        <Nav containerStyles='hidden xl:flex items-center  gap-x-8' />
+        <Nav
+          watchingScroll={activeScroll}
+          containerStyles='hidden xl:flex items-center  gap-x-8'
+        />
         {/* nav mobile */}
         <NavMobile />
         {/* nav button */}
