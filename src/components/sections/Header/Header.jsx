@@ -42,7 +42,7 @@ const Header = ({ params }) => {
   return (
     <header
       className={`fixed z-50 w-full transition-all ${
-        activeScroll ?  'bg-[#030315] py-6 text-white' : 'bg-transparent py-8'
+        activeScroll ?  'bg-[#030315] py-8 text-white' : 'bg-transparent py-8'
         }`}
     >
       <div className='container mx-auto flex flex-col xl:flex-row items-center justify-between'>
@@ -54,7 +54,7 @@ const Header = ({ params }) => {
         {/* nav mobile */}
         <NavMobile />
         {/* nav button */}
-        <div className='absolute right-7 top-9 z-10 xl:hidden'>
+        <div className='absolute right-7 top-[35%] z-10 xl:hidden'>
           <MenuBtn />
         </div>
         {/* socials  */}

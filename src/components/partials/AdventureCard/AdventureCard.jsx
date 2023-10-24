@@ -2,8 +2,8 @@ const  AdventureCard = ({ index, title, discription }) => {
 
 
   return (
-    <div className='flex flex-row items-center border border-indigo-600 '>
-      <div className='px-6 md:px-0 w-full md:w-1/4'>
+    <div className='flex flex-col items-center border border-indigo-600 rounded-md '>
+      <div className='px-6 md:px-0 w-full  border-8 border-yellow-500'>
         IMAGE
       </div>
     <div className={`md:w-3/4 md:rounded-md bg-blue-50 dark:bg-violet-50 dark:bg-opacity-10 `}>

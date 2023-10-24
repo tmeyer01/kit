@@ -39,7 +39,7 @@ const Nav = ({containerStyles, linkStyles, watchingScroll}) => {
 
 
   return (
-   <nav className={`${containerStyles} justify-between w-4/5`}>
+   <nav className={`${containerStyles} justify-between w-4/5 `}>
      <Link
         href={'/'}
         className='relative flex  w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0 items-center font-anton tracking-widest text-2xl uppercase'
