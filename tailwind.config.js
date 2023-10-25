@@ -22,9 +22,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        singerOverlay: 'url(/assets/hero/singer-overlay.png)',
         heroBackground: 'url(/assets/hero/hero-background.png)',
-        newsletter: 'url(/assets/newsletter/bg.png)',
       },
       fontFamily: {
         alexBrush: [`var(--font-alexBrush)`, 'sans-serif'],
@@ -32,15 +30,11 @@ module.exports = {
         anton: [`var(--font-anton)`, 'sans-serfif'],
       },
       colors: {
-        // primary: '#06062a',
-        // secondary: '#151538',
-        // tertiary: '#242445',
-        text: '#000000',
-        background: '#f7f7f7',
-        primary: '#6e6e6e',
-        secondary: '#cfcfcf',
+        text: '#130e01',
+        background: '#ffffff',
+        primary: '#91908d',
+        secondary: '#151414',
         accent: {
-          // DEFAULT: '#7f1cfc',
           DEFAULT: '#696969',
           hover: '#6519c6',
         },

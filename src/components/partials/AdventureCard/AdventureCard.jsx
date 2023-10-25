@@ -5,24 +5,30 @@ import { AnimatePresence, motion } from "framer-motion";
 const AdventureCard = ({ index, title, discription }) => {
   return (
     <motion.div
-      transition={{ delay: index * 0.1 }}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      className="flex flex-col items-center border border-indigo-600 rounded-md"
+      // transition={{ delay: index * 0.1 }}
+      // initial={{ opacity: 0, y: 20 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // exit={{ opacity: 0, y: 20 }}
+      // className="flex flex-col h-5/6 items-center border border-indigo-600 rounded-md "
+      className="grid grid-cols-1 border border-indigo-600"
     >
-      <div className="px-6 md:px-0 w-full  border-8 border-yellow-500 bg-black h-48 text-white">
-        IMAGE
+      <div class="col-span-1 flex flex-col h-48  bg-white border-2 p-4">
+        <h2 class="mb-2 font-bold text-2xl">Image</h2>
       </div>
-      <div
-        className={`md:w-3/4 md:rounded-md bg-blue-50 dark:bg-violet-50 dark:bg-opacity-10 `}
-      >
-        <h1 className="header-30 md:header-48 md:pr-20 pt-12 text-blue-950 dark:text-violet-200">
-          {title}
-        </h1>
-        <p className="paragraph-20 pt-8 pb-12 text-blue-950 dark:text-violet-200">
-          {discription}
+      <div class="col-span-1 flex flex-col bg-white border-2 p-4">
+        <h2 class="mb-2 font-bold text-2xl">Card Name</h2>
+        <div class="mb-4 flex flex-wrap">
+          <span class="mr-2">Link 1</span>
+          <span class="mr-2">Link 2</span>
+        </div>
+        <p class="text-md text-justify">
+          Some Description Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Maecenas vel enim lectus.
         </p>
+        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+          <p class="mr-2 mb-2">Tag #1</p>
+          <p class="mr-2 mb-2">Tag #2</p>
+        </div>
       </div>
     </motion.div>
   );

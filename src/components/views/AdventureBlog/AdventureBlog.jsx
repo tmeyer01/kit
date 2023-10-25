@@ -48,11 +48,18 @@ const AdventureBlog = () => {
   });
 
   return (
-    <section className="flex justify-center pt-6">
+    <section className="flex justify-center pt-6 pb-6">
       <GridContainer>
-        {links.map((links, index) => {
-          return <AdventureCard key={index} index={index} {...links} />;
-        })}
+        {links.map((link, index) => (
+          <motion.div
+            transition={{ delay: index * 0.1 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+          >
+            <AdventureCard key={index} index={index} {...link} />
+          </motion.div>
+        ))}
       </GridContainer>
     </section>
   );
