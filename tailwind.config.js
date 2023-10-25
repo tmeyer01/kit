@@ -22,7 +22,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        heroBackground: 'url(/assets/hero/hero-background.png)',
+        heroLanding: 'url(/assets/hero/hero-background.png)',
+        heroAdventures: 'url(/assets/hero/hero-adventures.jpg)',
+        treeToSea: 'url(/assets/adventures/tree2sea/hero.png)',
       },
       fontFamily: {
         alexBrush: [`var(--font-alexBrush)`, 'sans-serif'],

@@ -1,16 +1,14 @@
-// import { Adventures } from '@/components/adventures/Adventures'
+import AdventuresBlog from "@/components/views/AdventuresBlog/AdventuresBlog";
+import Hero from "@/components/Hero";
 
-import AdventureBlog from '@/components/views/AdventureBlog/AdventureBlog';
-import Hero from '@/components/Hero';
-// import Header from '@/components/Header';
-// import Header from '@/components/Header';
-// import Adventure from './components/Adventure';
+export default function Adventures() {
+  const backgroundImage = "heroAdventures";
+  const title = "Adventures";
 
-export default function Adventures () {
   return (
     <>
-      <Hero />
-      <AdventureBlog/>
+      <Hero backgroundImage={backgroundImage} title={title} />
+      <AdventuresBlog />
     </>
-  )
+  );
 }
