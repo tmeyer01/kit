@@ -48,7 +48,7 @@ const AdventureBlog = () => {
   });
 
   return (
-    <section className="flex justify-center pt-6 pb-6">
+    <section className="flex justify-center pt-6 pb-6 bg-accent">
       <GridContainer>
         {links.map((link, index) => (
           <motion.div

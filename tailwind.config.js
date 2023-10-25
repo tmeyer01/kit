@@ -31,11 +31,11 @@ module.exports = {
       },
       colors: {
         text: '#130e01',
-        background: '#ffffff',
+        background: '#c7c7c7',
         primary: '#91908d',
         secondary: '#151414',
         accent: {
-          DEFAULT: '#696969',
+          DEFAULT: '#91908d',
           hover: '#6519c6',
         },
       },
