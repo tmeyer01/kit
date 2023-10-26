@@ -24,7 +24,7 @@ module.exports = {
       backgroundImage: {
         heroLanding: 'url(/assets/hero/hero-background.png)',
         heroAdventures: 'url(/assets/hero/hero-adventures.jpg)',
-        treeToSea: 'url(/assets/adventures/tree2sea/hero.png)',
+        treeToSea: 'url(/assets/images/adventures/tree2sea/hero.png)',
       },
       fontFamily: {
         alexBrush: [`var(--font-alexBrush)`, 'sans-serif'],

@@ -6,11 +6,12 @@ import Adventure from "@/components/views/Adventure/Adventure";
 function adventure({ params }) {
   const backgroundImage = "heroAdventures";
 
-  console.log(params);
+  const adventureId = params.id;
+
   return (
     <>
-      <Hero backgroundImage={backgroundImage} />
-      {/* <Adventure title={title} /> */}
+      <Hero backgroundImage={backgroundImage} title={adventureId} />
+      <Adventure adventureId={adventureId} />
     </>
   );
 }

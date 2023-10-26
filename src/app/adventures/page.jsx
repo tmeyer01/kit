@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 
 export default function Adventures() {
   const backgroundImage = "heroAdventures";
+  // const backgroundImage = "heroLanding";
   const title = "Adventures";
 
   return (

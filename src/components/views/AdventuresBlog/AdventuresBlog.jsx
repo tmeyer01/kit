@@ -16,27 +16,41 @@ import GridContainer from "@/components/layouts/GridContainer";
 const links = [
   {
     path: "treeTosea",
+    image: "/assets/images/adventures/tree2sea/icon.png",
+    alt: "tree2sea",
     title: "Tree 2 Sea",
-    discription: " 1000km, 11 day bikepacking adventure",
+    discription:
+      " 1000km, 11 day bikepacking adventure in some of the most remote parts of Vancouver Island",
     background: "treeToSea",
   },
   {
     path: "octet",
+    alt: "octet",
+    image: "/assets/images/adventures/tree2sea/icon.png",
     title: "Octet",
-    discription: "8 moutains 5000+ meters of elevation",
+    discription:
+      "8 moutains 5000+ meters of elevation, no fufu, who will survive?",
   },
   {
     path: "threehundred",
-    title: "300Km for Milan San Remo",
-    discription: "Start the season off with a bang",
+    alt: "threehundred",
+    image: "/assets/images/adventures/tree2sea/icon.png",
+    title: "300KM for Milan San Remo?",
+    discription:
+      "Start the season off with a bang. Sure hope youve got a bike fit",
   },
   {
     path: "cvn2023",
+    alt: "cvn2023",
     title: "Cowichan Valley Nightmare 2023",
-    discription: "11 day bikepacking adventure",
+    image: "/assets/images/adventures/tree2sea/icon.png",
+    discription:
+      "200km all road event through the dead of night. Pray for rain",
   },
   {
     path: "underbiking",
+    alt: "underbiking",
+    image: "/assets/images/adventures/tree2sea/icon.png",
     title: "Underbiking Enthusiats",
     discription:
       "The trail says its a black diamond but are you sure about that?",
