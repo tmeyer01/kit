@@ -20,7 +20,7 @@ const Header = ({ params }) => {
   useEffect(() => {
     const handleScroll = () => {
       // detect scroll
-      setActiveScroll(window.scrollY > 100);
+      setActiveScroll(window.scrollY > 5);
     };
 
     // add event listener
@@ -34,11 +34,11 @@ const Header = ({ params }) => {
 
   return (
     <header
-      className={`fixed z-50 w-full transition-all ${
+      className={`fixed flex align-center z-50 w-full transition-all  h-28 ${
         activeScroll ? "bg-[#030315] py-8 text-white" : "bg-transparent py-8"
       }`}
     >
-      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
+      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between ">
         {/* nav */}
         <Nav
           watchingScroll={activeScroll}
@@ -47,7 +47,7 @@ const Header = ({ params }) => {
         {/* nav mobile */}
         <NavMobile />
         {/* nav button */}
-        <div className="absolute right-7 top-[35%] z-10 xl:hidden">
+        <div className="absolute right-7 top-[10%] xl:hidden">
           <MenuBtn />
         </div>
         {/* socials  */}

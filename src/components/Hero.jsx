@@ -14,12 +14,12 @@ import { usePathname } from "next/navigation";
 import { fadeIn } from "../../variants";
 
 const Hero = ({ backgroundImage, title }) => {
-  console.log("inside hero", backgroundImage);
+  // console.log("inside hero", backgroundImage);
 
   return (
     <motion.section
       // className={`relative bg-${backgroundImage} bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[60vh] bg-black`}
-      className={`relative bg-heroAdventures bg-fixed   bg-cover w-full bg-center bg-no-repeat h-[60vh] bg-black`}
+      className={`relative bg-heroAdventures bg-fixed bg-cover w-full bg-center bg-no-repeat h-[60vh] bg-black`}
     >
       <motion.div
         transition={{ delay: 0.7 }}
